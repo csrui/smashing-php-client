@@ -1,0 +1,21 @@
+{
+    "name": "csrui/smashing-php-client",
+    "description": "Push information to Smashing dashboards.",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "authors": [
+        {
+            "name": "Rui Sardinha",
+            "email": "mail@ruisardinha.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "csrui\\SmashingPhpClient\\Connectors\\": "Connectors/",
+          "csrui\\SmashingPhpClient\\": "Lib/"
+        }
+    }
+}
