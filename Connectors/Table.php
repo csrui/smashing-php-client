@@ -6,9 +6,9 @@ use csrui\SmashingPhpClient\Client;
 
 class Table extends Client {
 
-    public function push(string $title, string $text, string $moreinfo, array $items = []) {
+    public function push(string $title, string $moreinfo, array $items = []) {
 
-        $data = compact('title', 'text', 'moreinfo', 'items');
+        $data = compact('title', 'moreinfo', 'items');
         return parent::send($data);
     }
 }
